@@ -1,0 +1,16 @@
+.map-block {
+    position:relative;
+}
+
+.map-avatar {
+  background-image: url('/assets/images/map.png');
+  background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    color:white;
+}

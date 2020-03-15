@@ -9,6 +9,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from'@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
 
 /**
  * Only include material modules which are used during Landing Pages!
@@ -23,7 +24,8 @@ import { MatListModule } from'@angular/material/list';
     MatMenuModule,
     MatDividerModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatSelectModule
   ]
 })
 export class MaterialPart1Module {}

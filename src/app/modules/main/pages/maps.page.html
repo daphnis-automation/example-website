@@ -1,3 +1,43 @@
-<div >
-    MAPS
+<div style="height:85%;position:relative;">
+
+    <ng-container *ngIf="injected">
+        <google-map height="100%" width="100%"></google-map>
+
+        <div class="overlay" fxLayout="row" fxLayoutAlign="center center">
+            <mat-card style="width:350px;">
+                <mat-card-content>
+                    <div fxLayout="column">
+                        <mat-card-header class="no-avatar">
+                            <div mat-card-avatar class="map-avatar"></div>                            
+                            <mat-card-title>Resellers</mat-card-title>
+                            <mat-card-subtitle>Enter your location to start looking.</mat-card-subtitle>
+                        </mat-card-header>
+                        <div fxLayout="row" >
+                            <mat-form-field appearance="outline" fxFlex>
+                                <mat-label>Your address / zipcode</mat-label>
+                                <input matInput>
+                            </mat-form-field>      
+                            <div fxFlex="2"></div>
+                            <mat-form-field appearance="outline" fxFlex="25">
+                                <mat-label>Range</mat-label>
+                                <mat-select >
+                                    <mat-option value="25">25 km</mat-option>
+                                    <mat-option value="50">50 km</mat-option>
+                                    <mat-option value="75">75 km</mat-option>
+                                    <mat-option value="150">150 km</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+ 
+                    <mat-card-actions>
+                        <div fxFlex></div>
+                        <button mat-raised-button color="primary">
+                            Find
+                        </button>
+                    </mat-card-actions>
+                </mat-card-content>
+            </mat-card>  
+        </div>                 
+    </ng-container>
 </div>

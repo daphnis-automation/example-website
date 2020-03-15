@@ -10,7 +10,7 @@ This repository demonstrates the usage of [HA-CMS](https://github.com/daphnis-au
 5) Pages to be build:
     -  Home / Landing Page
     -  Contact Page
-    -  Google Maps for displaying the resellers
+    -  Google Maps for displaying the resellers. [Read More here](https://timdeschryver.dev/blog/google-maps-as-an-angular-component)
     -  Catalog / Shop module
     -  Sitemap (containing all links to pages and catalog)
     -  t.b.d..
@@ -30,6 +30,10 @@ Npm 6.12.0
 
 
 ## Starting 
+Create your environment file:
+
+Copy the `/src/environments/environment.ts` file into `/src/environments/environment.local.ts` and fill in the configurations.
+<u>Do not push this into repo</u>
 
 <code>npm install</code> For installing the required packages
 

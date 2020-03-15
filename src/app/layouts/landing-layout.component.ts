@@ -5,7 +5,8 @@ import { MediaMatcher } from '@angular/cdk/layout';
 @Component({
     selector: 'landing-layout',
     templateUrl: 'landing-layout.component.html',
-    styleUrls: [ 'landing-layout.component.scss' ]
+    styleUrls: [ 'landing-layout.component.scss' ],
+    encapsulation: ViewEncapsulation.None
 }) 
 export class LandingLayoutComponent implements OnDestroy, AfterViewInit {
     constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {

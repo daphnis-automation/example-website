@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { HomePage } from './pages/home.page';
 import { MainRouting } from './main.routing';
 import { MaterialPart1Module } from 'src/app/shared/material-part1.module';
-import { ContactPage } from './pages/contact.page';
-import { NotFoundPage } from './pages/not-found.page';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { GoogleMapsModule } from '@angular/google-maps'
+
+
+import { HomePage } from './pages/home.page';
+import { ContactPage } from './pages/contact.page';
 import { MapsPage } from './pages/maps.page';
+import { NotFoundPage } from './pages/not-found.page';
 
 @NgModule({
     imports: [
@@ -16,6 +19,7 @@ import { MapsPage } from './pages/maps.page';
         HttpClientModule,
         FlexLayoutModule,
         MaterialPart1Module,
+        GoogleMapsModule,
         RouterModule.forChild(MainRouting),
     ],
     declarations: [

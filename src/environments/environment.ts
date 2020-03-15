@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  cmsApiUrl: 'http://localhost:4200'
+  cmsApiUrl: 'http://localhost:4200',
+  GmbMapsKey: 'ENTER_YOUR_KEY_HERE',
+
 };
 
 /*
@@ -15,4 +17,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 
-import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+//import 'zone.js/dist/zone-error';  // Included with Angular CLI.

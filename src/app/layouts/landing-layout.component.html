@@ -1,14 +1,16 @@
-<app-header-v1 (toggleLeftSideBar)="leftnav.toggle()"></app-header-v1>
-<mat-sidenav-container>
-    <mat-sidenav #leftnav position="start">
-        <app-menu-sidebar-v1></app-menu-sidebar-v1>
-    </mat-sidenav>
+<div class="main-container">
+    <app-header-v1 (toggleLeftSideBar)="leftnav.toggle()"></app-header-v1>
+    <mat-sidenav-container class="snav-container">
+        <mat-sidenav #leftnav position="start">
+            <app-menu-sidebar-v1></app-menu-sidebar-v1>
+        </mat-sidenav>
 
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-        <app-footer-v1></app-footer-v1>
-    
-    </mat-sidenav-content>
-    
-    <mat-sidenav position="end">End</mat-sidenav>
-</mat-sidenav-container>    
+        <mat-sidenav-content class="page-container">
+            <router-outlet></router-outlet>
+            <app-footer-v1></app-footer-v1>
+        </mat-sidenav-content>
+        
+        <mat-sidenav position="end">End</mat-sidenav>
+    </mat-sidenav-container>  
+
+</div>
