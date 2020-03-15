@@ -1,0 +1,109 @@
+{
+    "id": "123456789012346",
+    "alias": "top-menu",
+    "languageCode": "en",
+    "version": "1",
+    "state": "published",
+    "updatedOn": "2020-03-12",
+    "updatedBy": {
+        "nickname": "admin"
+    },
+    "menuItems": [
+        {
+            "id": "222222",
+            "seqNo": 0,
+            "type": "link",
+            "link": {
+                "title": "Menu 1",
+                "label": "This is menu 1"
+            },
+            "config": {},
+            "children": [
+                {
+                    "id": "222223",
+                    "seqNo": 0,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Sub Menu 1",
+                        "label": "This is Sub Menu 1",
+                        "url": "/shop/categories/e-bikes"
+                    }                    
+                },
+                {
+                    "id": "222224",
+                    "seqNo": 2,
+                    "type": "divider"
+                },
+                {
+                    "id": "222225",
+                    "seqNo": 3,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Sub Menu 2",
+                        "label": "This is Sub Menu 2",
+                        "url": "/shop/categories/transport-bikes"
+                    }    
+                },
+                {
+                    "id": "222226",
+                    "seqNo": 4,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Explore beta products",
+                        "label": "",
+                        "url": "/shop/categories/beta"
+                    },
+                    "config": {
+                        "cssClass": "group-label"
+                    }                
+                },                
+                {
+                    "id": "222227",
+                    "seqNo": 5,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Sub Menu 3",
+                        "label": "This is Sub Menu 3",
+                        "url": "/shop/categories/transport-bikes"
+                    }  
+                }                
+            ]
+        },
+        {
+            "id": "222232",
+            "seqNo": 0,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Menu 2",
+                "label": "This is menu 2",
+                "url": "/shop/categories"
+            },
+            "config": {},
+            "children": [ ]
+        },        
+        {
+            "id": "222242",
+            "seqNo": 0,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Contact Us",
+                "label": "Contact us if you have any questions",
+                "url": "/contact"
+            },
+            "config": {},
+            "children": [ ]
+        }           
+    ]
+}

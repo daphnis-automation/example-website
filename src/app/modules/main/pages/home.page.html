@@ -1,0 +1,49 @@
+<div >
+    <div class="hero-banner" [style.background-image]="'url(' + heroImageUrl + ')'">
+
+        <div class="overlay" fxLayout="row" fxLayoutAlign="center center">
+            <div>
+                <h1>Experience your Best Ride</h1>
+                <p>My Bike & Co is the supplier of affordable and quality bikes.</p>
+                <a mat-stroked-button color="white" routerLink="/catalog">
+                    Explore our products
+                </a>
+            </div>
+            <div fxFlex="10"></div>
+            <mat-card>
+                <mat-card-content>
+                    <div fxLayout="column">
+                        <mat-card-header class="no-avatar">
+                            <mat-card-title>Get up-to-date</mat-card-title>
+                            <mat-card-subtitle>Receive a mail of our latest uptates</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Name</mat-label>
+                            <input matInput>
+                        </mat-form-field>                      
+                        <mat-form-field appearance="outline">
+                            <mat-icon matPrefix>email</mat-icon>
+                            <mat-label>Email</mat-label>
+                            <input matInput>
+                        </mat-form-field>   
+                    </div>
+ 
+                    <mat-card-actions>
+                        <div fxFlex></div>
+                        <button mat-raised-button color="primary">
+                            Apply for updates
+                        </button>
+                    </mat-card-actions>
+                </mat-card-content>
+            </mat-card>            
+        </div>
+    </div>
+    <div>
+        <section class="pull-up">
+            <mat-card>
+                Testing
+            </mat-card>
+        </section>
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>

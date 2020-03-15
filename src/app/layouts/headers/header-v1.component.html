@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign=" center" class="stick-top">
+    <a class="brand" href=".">
+        <img src="assets/images/logo-transparent.svg" alt="My Bike & Co Logo" >
+        <span fxShow="false" fxShow.gt-xs>
+            My Bike & Co
+        </span>
+    </a>
+
+    <!-- Hide button when screen = large, else display -->
+    <button mat-icon-button fxShow fxHide.lg (click)="btnShowMenuClicked()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <!-- Show Menu Container when screen = large, else hide it -->
+    <app-menu-top-v1 fxHide fxShow.lg></app-menu-top-v1>
+
+    <div fxFlex></div>
+
+    <a mat-button fxShow="false" fxShow.gt-xs href="/resellers">
+        Find resellers
+    </a>
+    <a mat-stroked-button color="white" href="/login">
+        Login
+    </a>
+
+
+</mat-toolbar>

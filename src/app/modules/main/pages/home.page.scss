@@ -1,0 +1,36 @@
+.hero-banner {
+    position:relative;
+    display:block;
+    min-height:600px;
+    // background-image:    url("");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;       
+  
+    img {
+        width:100%;
+    }
+
+    h1 {
+        font-size:300%;
+        color:white;
+    }
+    color: hsla(0,0%,100%,.6);
+    font-size:140%;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1;
+    color:white;
+}
+
+.pull-up {
+    position:relative;
+    z-index:1;
+    margin-top: -50px;
+}

@@ -1,0 +1,72 @@
+<nav *ngIf="siteMenu">
+    <ng-container *ngFor="let menuItem of siteMenu.menuItems">
+        <!-- LEVEL 1: Menu Items without children! -->
+        <ng-container *ngIf="!menuItem.children || menuItem.children.length <= 0">
+            <a mat-button [title]="menuItem.link.label"
+                [href]="menuItem.link.url"
+                [target]="menuItem.link.target"
+                [rel]="menuItem.link.rel">
+                {{menuItem.link.title}}
+            </a>
+        </ng-container>
+
+
+        <!-- LEVEL 1: Menu Items containing children! -->
+        <ng-container *ngIf="menuItem.children && menuItem.children.length > 0">
+            <a mat-button [matMenuTriggerFor]="child" 
+                [title]="menuItem.link.label">                            
+                {{menuItem.link.title}}
+                <mat-icon >expand_more</mat-icon>
+            </a>
+            <mat-menu #child="matMenu">
+                
+                <ng-container *ngFor="let childMenu of menuItem.children">
+
+                    <!-- LEVEL 2: ChildMenuItem without children! -->
+                    <ng-container *ngIf="!childMenu.children || childMenu.children.length <= 0">
+                        <ng-container *ngIf="childMenu.type === 'link'">
+                            <a mat-menu-item [title]="childMenu.link.label"
+                                    [href]="childMenu.link.url"
+                                    [target]="childMenu.link.target"
+                                    [rel]="childMenu.link.rel">   
+                            {{childMenu.link.title}}</a>
+                        </ng-container>
+                        <ng-container *ngIf="childMenu.type === 'divider'">
+                            <mat-divider></mat-divider>
+                        </ng-container>
+                    </ng-container>
+
+                    <!-- LEVEL 2: ChildMenuItem with children! -->
+                    <ng-container *ngIf="childMenu.children && childMenu.children.length > 0">
+                        
+                        <a mat-menu-item [title]="childMenu.link.label"
+                                         [matMenuTriggerFor]="childOfChild">
+                                         {{childMenu.link.title}}
+                        </a>
+                        <mat-menu #childOfChild="matMenu">
+                            <ng-container *ngFor="let childOfChildMenu of childMenu.children">
+
+                                <!-- LEVEL 3: only the menu items of ChildMenu -->
+                                <ng-container *ngIf="childOfChildMenu.type === 'link'">
+                                    <a mat-menu-item [title]="childOfChildMenu.link.label"
+                                        [href]="childOfChildMenu.link.url"
+                                        [target]="childOfChildMenu.link.target"
+                                        [rel]="childOfChildMenu.link.rel">
+                                        {{childOfChildMenu.link.title}}</a>
+                                </ng-container>
+                                <ng-container *ngIf="childOfChildMenu.type === 'divider'">
+                                    <mat-divider></mat-divider>
+                                </ng-container>
+                            </ng-container>
+                        </mat-menu>
+
+                    </ng-container>
+                </ng-container>
+
+
+            </mat-menu>
+        </ng-container>
+
+    </ng-container>
+
+</nav>

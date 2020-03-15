@@ -1,0 +1,6 @@
+<mat-nav-list *ngIf="siteMenu && siteMenu.menuItems.length > 0">
+  <mat-list-item *ngFor="let menuItem of siteMenu.menuItems">
+     <a matLine [href]="menuItem.link.url" >{{ menuItem.link.title }}</a>
+
+  </mat-list-item>
+</mat-nav-list>

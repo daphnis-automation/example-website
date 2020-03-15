@@ -1,0 +1,42 @@
+/**
+ * Footer
+ */
+.site-footer {
+	background-color: #f9f9f9;
+	color: #626262;
+
+	.before-footer-wrap {
+		@include clearfix;
+		@include stretch-full-width;
+		padding-top: 3.001em;
+		padding-bottom: 2.331em;
+		border-bottom: 1px solid #bebebe;
+
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: #1f1f1f;
+		font-weight: 500;
+	}
+}
+
+.site-info {
+	background-color: #222;
+	color: #bababa;
+	letter-spacing: -0.034em;
+	padding: 1.679em 24px;
+
+
+	a {
+		text-decoration: underline;
+		color: #bababa;
+
+		@include hover-focus {
+			color: #bababa;
+		}
+	}
+
+	.fa-heart {
+		color: #fd4b4b;
+	}
+}

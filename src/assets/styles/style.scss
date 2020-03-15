@@ -1,0 +1,28 @@
+/**
+ * File which will be compiled into a single style-sheet, Defined in: angular.json
+ * Table Of Content
+ *
+ * 	1. Globals
+ *	2. Headers
+ *	3. Navigations
+ *	4. Banners
+ *	5. Footers
+ *	6. app
+ *	7. Widgets
+ *	8. Custom Templates
+ */
+
+@import 'variables';
+@import 'mixins';
+
+@import 'app';
+@import 'footer';
+@import 'content-block';
+
+.mat-icon[color='red'] {
+    color:#fd4b4b;
+}
+
+.mat-stroked-button[color='white'] {
+    border-color:white;
+}

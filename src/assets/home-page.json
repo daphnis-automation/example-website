@@ -1,0 +1,301 @@
+{
+    "id": "123456789012345",
+    "alias": "home-page",
+    "languageCode": "en",
+    "version": "1",
+    "state": "published",
+    "updatedOn": "2020-03-12",
+    "updatedBy": {
+        "nickname": "admin"
+    },
+    "title": "Welcome to My Bike & Co",
+    "assets": [
+        {
+            "ratio": "5:2",
+            "size": {
+                "width": 1950,
+                "height": 780
+            },
+            "alt": "The new century for good bikes",
+            "src": "https://i.ibb.co/Yk0HR8w/landing-bg-vienna.jpg"
+        }
+    ],
+    "metadata": {
+        "named": [
+            {
+                "name": "keywords",
+                "content": "a,b,c"
+            },
+            {
+                "name": "description",
+                "content": "Description in plain text"
+            }
+        ],
+        "properties": [
+            {
+                "property": "og:type",
+                "content": "website"
+            },
+            {
+                "property": "og:site_name",
+                "content": "My Bike & Co"
+            },
+            {
+                "property": "og:image",
+                "itemprop": "image primaryImageOfPage",
+                "content": "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded"
+            }
+        ],
+        "links": [
+            {
+                "rel": "canonical",
+                "content": "https://website.com"
+            },
+            {
+                "rel": "shortcut icon",
+                "content": "url_to_image"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "Stack overflow",
+                "href": "/opensearch.xml"
+            }
+        ]
+    },
+    "bodyComponents": [
+        {
+            "seqNo": 0,
+            "type": "HtmlBlock",
+            "alias": "home-entrance",
+            "htmlValue": "<h2 class=\"section-title upper\">MyBikeAndCo</h2><ul class=\"nav nav-inline categories\"><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">E-Bikes</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Transport</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Sportief</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Familie</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Dames</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Heren</span></a></li><li class=\"nav-item\"><a href=\"blog-single.html\" class=\"nav-link\"><span class=\"upper\">Kids</span></a></li></ul>"
+        },
+        {
+            "seqNo": 1,
+            "type": "Component",
+            "alias": "higlighed-categories",
+            "config": {
+                "cssClass": "product-loop-categories",
+                "maxColumns": 3
+            },
+            "languageCode": "en",
+            "componentItems": [
+                {
+                    "title": "Bakfietsen",
+                    "assets": [
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 400,
+                                "height": 400
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/wzs8hfR"
+                        }
+                    ],
+                    "caption": "We have new bikes added",
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the bakfietsen",
+                        "label": "More info...",
+                        "url": "/categories/bakfietsen"
+                    },
+                    "config": null
+                },
+                {
+                    "title": "Transport bikes",
+                    "assets": [
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 400,
+                                "height": 400
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/wzs8hfR"
+                        }
+                    ],
+                    "caption": "We have new Transport bikes added",
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "E-Bikes",
+                    "assets": [
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 400,
+                                "height": 400
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/wzs8hfR"
+                        }
+                    ],
+                    "caption": "We have new Transport bikes added",
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "E-Bikes",
+                    "assets": [
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 400,
+                                "height": 400
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/wzs8hfR"
+                        }
+                    ],
+                    "caption": "We have new Transport bikes added",
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                }
+            ]
+        },
+        {
+            "seqNo": 2,
+            "type": "Component",
+            "alias": "single-banner",
+            "config": {
+                "cssClass": "section-media-single-banner"
+            },
+            "languageCode": "en",
+            "componentItems": [
+                {
+                    "title": "<span style=\"color:red;\">Ontdek My Bike & Co<\/span>",
+                    "description": "<p>Nullam dignissim elit ut urna rutrum, a fermentum mi auctor. Mauris efficitur magna orci, et dignissim lacus scelerisque sit amet. Proin malesuada tincidunt nisl ac commodo. Vivamus eleifend porttitor ex sit amet suscipit. Vestibulum at ullamcorper lacus, vel facilisis arcu. Aliquam erat volutpat.<\/p><ul><li>High-precision lens provides a clearer picture and a better view for 3D.<\/li><li>55\" class screen full array LED TV<\/li><li>With stand: 48.98\"W x 30.69\"H x 10.59\"D<\/li><li>Display type: LED, Resolution: 1920 x 1080, Contrast ratio: 2M:1<\/li><li>Motion Rate: 120<\/li><\/ul>",
+                    "assets": [
+                        {
+                            "ratio": "6:3",
+                            "size": {
+                                "width": 850,
+                                "height": 424
+                            },
+                            "alt": "Ontdek My Bike & Co",
+                            "src": "https://ibb.co/4mf6RKg"
+                        }
+                    ],
+                    "caption": null,
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the bakfietsen",
+                        "label": "More info...",
+                        "url": "/categories/bakfietsen"
+                    },
+                    "config": { 
+                        "cssClass": "media remove-flex" ,
+                        "imageCssClass": "" ,
+                        "bodyCssClass": "media-body remove-flex" 
+                    }
+                }
+            ]
+        },
+        {
+            "seqNo": 3,
+            "type": "Component",
+            "alias": "campaigns",
+            "config": {
+                "cssClass": "section-media-single-banner-multi-assets"
+            },
+            "languageCode": "en",
+            "componentItems": [
+                {
+                    "title": null,
+                    "assets": [
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 50,
+                                "height": 50
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "http://location_of_asset",
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice bakfiets picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "ratio": "1:1",
+                            "size": {
+                                "width": 50,
+                                "height": 50
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "http://location_of_asset",
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice bakfiets picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        }
+                    ],
+                    "caption": null,
+                    "link": null
+                },
+                {
+                    "title": null,
+                    "assets": [
+                        {
+                            "ratio": "3:4",
+                            "size": {
+                                "width": 384,
+                                "height": 512
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/ysJW5Fw"
+
+                        }
+                    ],
+                    "caption": "Caption text, Bluetooth on-ear PureBass Headphones <br\/>OK",
+                    "link": {
+                        "rel": "",
+                        "title": "A new campaign",
+                        "label": null,
+                        "url": "/campaign/id"
+                    }
+                },
+                {
+                    "title": null,
+                    "assets": [
+                        {
+                            "ratio": "3:4",
+                            "size": {
+                                "width": 384,
+                                "height": 512
+                            },
+                            "alt": "A nice bakfiets picture",
+                            "src": "https://ibb.co/ysJW5Fw"
+
+                        }
+                    ],
+                    "caption": "Caption text, Bluetooth on-ear PureBass Headphones <br\/>OK",
+                    "link": {
+                        "rel": "",
+                        "title": "A new campaign",
+                        "label": null,
+                        "url": "/campaign/id"
+                    }
+                }                                  
+            ]
+        }
+    ]
+}

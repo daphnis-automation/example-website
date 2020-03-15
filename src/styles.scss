@@ -1,0 +1,26 @@
+/*
+ Only define fixes here!
+*/
+.clear {
+    display:block;
+    clear:both;
+    float:none;
+}
+.relative {
+    position:relative;
+}
+.clip {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.float-left {
+    float:left;
+    float:right;
+}
+.stick-top {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index:1000;
+}
