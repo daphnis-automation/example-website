@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild, Inject, ElementRef, AfterViewInit } from '@angular/core';
 import { CmsService } from 'src/app/services/cms.service';
 import { LayoutService } from 'src/app/services/layout.service';
-import { DOCUMENT } from '@angular/common';
 import { environment } from 'src/environments/environment';
 
 
@@ -17,7 +16,6 @@ export class MapsPage implements OnInit, AfterViewInit  {
     injected:boolean = false;
 
     constructor(
-        @Inject(DOCUMENT) private document: Document,
         private cmsService: CmsService,
         private layoutService: LayoutService) { 
     }
@@ -29,14 +27,11 @@ export class MapsPage implements OnInit, AfterViewInit  {
     }
 
     ngAfterViewInit() {
-        var s = this.document.createElement("script");
-        s.type = "text/javascript";
-        s.src = "https://maps.googleapis.com/maps/api/js?key=" + environment.GmbMapsKey;
-        this.document.body.appendChild(s);
+        this.layoutService.injectGoogleMaps(environment.GmbMapsKey);
 
         setTimeout(() => {
             this.injected = true;
-        }, 200);
+        }, 100);
     }
      showMap() {
         console.log(this.mapRef.nativeElement);

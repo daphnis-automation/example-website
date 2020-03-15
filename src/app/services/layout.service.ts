@@ -31,5 +31,17 @@ export class LayoutService {
         ]);        
     }
 
+    _mapsInjected: boolean = false;
+    injectGoogleMaps(withKey: string): void {
+        if (this._mapsInjected) return;
+
+        //To prevent duplicate injection
+        var s = this.document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "https://maps.googleapis.com/maps/api/js?key=" + withKey;
+        this.document.body.appendChild(s);
+
+        this._mapsInjected = true;
+    }
 
 }
