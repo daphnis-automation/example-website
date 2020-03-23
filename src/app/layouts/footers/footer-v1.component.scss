@@ -1,3 +1,8 @@
+* {
+    float: left;
+    width: 100%;
+}
+
 .site-footer footer-v1 {
     background-color: thistle;
 }
@@ -8,6 +13,131 @@
     float: left;
 
 } 
+
+.footer-telegram-icon{
+    width: 15%; float: left;
+}
+
+#footer-first-header {
+    float: left; width: 50%; margin-left: 1%;font-size: 25px;
+}
+
+#footer-first-description {
+    margin-left: 1%;width: 80%;margin-top: 4%;
+}
+
+#footer-search-bar {
+    display: inline; margin-right: 5;
+}
+
+#footer-search-input {
+    width: 65%; height: 40px; border-radius: 5px;
+}
+
+#footer-search-button {
+    background-color: blue; color: rgb(255, 255, 255); width: 25%; height: 50px
+}
+
+
+#footer-social-media-description{
+    width: 20%;
+}
+
+#footer-social-medias {
+    display: flex;
+}
+
+#footer-social-media-icon {
+    width:25%; height: 75%; float: left;
+}
+
+#footer-social-media-name {
+    width: 5%; height: 5%; display: inline;margin-left: 5%; text-align: center;background-position-y: bottom; font-size: 100%;
+}
+
+#footer-question-part {
+    width: 100%; display: flex;
+}
+
+#footer-question-part img {
+    margin-left: 5%;margin-top: 5%; width: 15%; height: 15%;
+}
+
+#footer-question-part-detail {
+    width: 50%; margin-left: 5%; margin-top: 5%; font-size: 110%;
+}
+
+#footer-question-part-number {
+    font-weight: bold; font-size: 140%; line-height: 1.2em
+}
+
+#footer-payments-part {
+    width: 50%; margin-left: 2%; margin-top: 5%; font-size: 110;
+}
+
+#footer-payments-part-cards {
+    width: 30%; height: 30%;
+}
+
+#footer-security-part {
+    display: inline;
+}
+
+#footer-security-part-idle {
+    width: 1px; margin-left: 1px;
+}
+
+#footer-security-part-norton {
+    width: 35%; height: 30%;
+}
+
+#footer-security-part-mcafee {
+    width: 35%; height: 30%; float: left;
+}
+
+#footer-category {
+    float: left;
+}
+
+#footer-category-types {
+    width:60%; top: 0; margin-left: 5%; margin-top: 5%; float: left; text-align: center;
+}
+
+#footer-category-types-header {
+    font-size: 16px;
+}
+
+#footer-category-types-features {
+    line-height: 3em; font-size: 15px;
+}
+
+#footer-category-types-features-2 {
+    width: 35%; float: left; margin-top: 10%;line-height: 3em; font-size: 15px;
+}
+
+#footer-service {
+    float: left;
+}
+
+#footer-service-idle {
+    height: 5%;
+}
+
+#footer-service-feature {
+    width:60%; top: 0; margin-left: 5%; margin-top: 20%; float: left; text-align: center;border-left: 2px solid #565f67;height: 80%;
+}
+
+#footer-service-header {
+    font-size: 16px; margin-top: 5%;
+}
+
+#footer-service-items {
+    line-height: 3em; font-size: 15px;
+}
+
+#footer-service-idle-2 {
+    height: 10%;
+}
 
 .footer-part-1 > ::ng-deep figure {
     justify-content: flex-start !important;

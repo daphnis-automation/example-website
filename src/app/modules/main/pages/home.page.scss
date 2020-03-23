@@ -2,8 +2,7 @@
     position:relative;
     display:block;
     min-height:600px;
-    // background-image:    url("");
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;       
   
@@ -46,6 +45,23 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.categories-bikes-nav-list {
+    display: flex !important; text-transform: uppercase;
+}
+
+.categories-bikes-nav-list h3{
+    color: blue;
+}
+
+#bike-types-cards {
+    width: 25%; float: left; margin: 2%;background-color: #ccc;
+}
+
+.bike-types-cards-content {
+    margin:auto; 
+    text-align: center;
+}
+
 .bike-grid{
     width: 90%;
     margin: auto;
@@ -77,6 +93,9 @@
 #bike-grid-description-button {
     background-color: royalblue;border-radius: 20px;color: whitesmoke; margin-top: 5%;height: 20%; width: 40%;
 }
+.headphones-card{
+    width: 90%; float: left; margin:auto;
+}
 
 .headphones-card-item {
 
@@ -85,6 +104,10 @@
 
 .headphones-card-item:hover {
     border: 2px solid #ccc;
+}
+
+.unique-cards-div {
+    width: 90%; margin:auto;
 }
 
 .unique-cards {
@@ -98,7 +121,12 @@
 
 .unique-cards-icon {
     display: none;
-    right: 0px; position:absolute;
+    right: 0px;
+    position:absolute;
+}
+
+.unique-cards-content {
+    text-align:center; color: blue; font-size: 1.2em;
 }
 
 .unique-cards-button {
@@ -132,41 +160,3 @@
 .unique-cards:hover > .unique-cards-icon{
     display: inline;
 }
-/* 
-.headphones-card {
-    width: 25%;
-    float: left;
-    margin: 2%;
-}
-
-.headphones-card-interior {
-    padding: 5px;
-    width: 100%;}
-
-.headphones-card-interior img{
-    width: 100%;
-    height: 100%;
-}
-
-.headphones-card-interior p{
-    text-align: center;
-}
-
-.headphones-card-interior:hover {
-    border: 2px solid #ccc;
-}
-
-.headphones-card-last {
-    margin: 2%;
-    width: 25%;
-    float: left;
-}
-
-.headphones-card-interior-special {
-	border: 1px solid #000;
-    float: left;
-    background-image: url("https://cdn.pixabay.com/photo/2015/01/13/13/20/guy-598180_960_720.jpg");
-	background-position: center;
-    background-repeat: space;
-}
- */
