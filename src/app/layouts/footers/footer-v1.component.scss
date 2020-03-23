@@ -1,0 +1,40 @@
+.site-footer footer-v1 {
+    background-color: thistle;
+}
+
+.social-media-icons {
+    width: 1%;
+    height: 1%;
+    float: left;
+
+} 
+
+.footer-part-1 > ::ng-deep figure {
+    justify-content: flex-start !important;
+    display: inline; position: absolute; right: 0;
+}
+
+.footer-logo {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 3.2em;
+
+    a {
+        display: block;
+        margin: 0;
+    }
+
+    svg {
+        width: 176px;
+        height: 28px;
+    }
+
+    img {
+        max-width: 200px;
+    }
+}
+
+.footer-logo > ::ng-deep figure {
+    justify-content: flex-start !important;
+    display: inline; position: absolute; right: 0;
+}

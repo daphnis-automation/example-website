@@ -22,6 +22,17 @@ export class HomePage implements OnInit  {
         private layoutService: LayoutService) { 
     }
 
+    BikeTypes: { name: string, img: string }[] = [
+        {  "name": "E-Bike", "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg" },
+        {  "name": "Transport", "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg" },
+        {  "name": "Sportief", "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg" },
+        {  "name": "Familie", "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg" },
+        {  "name": "Heren" , "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg"},
+        {  "name": "Dames" , "img": "https://cdn.pixabay.com/photo/2015/07/30/11/04/bike-867229_1280.jpg"},
+
+    ];
+
+    
     async ngOnInit() {
         console.log('HomePage.ngOnInit()');
         var result = await this.cmsService.getSitePage('home-page');
@@ -33,5 +44,7 @@ export class HomePage implements OnInit  {
         this.bodyBanner = result.bodyComponents.find(c=>c.type === BodyType.Component && c.alias === 'single-banner');
         this.bodyCampaigns = result.bodyComponents.find(c=>c.type === BodyType.Component && c.alias === 'campaigns' )
     }
+    
 
 }
+
