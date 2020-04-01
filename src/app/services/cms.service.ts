@@ -25,7 +25,7 @@ export class CmsService {
     public getSitePage(alias: string): Promise<SitePage> {
         console.log('CmsService.getSitePage()');
         try {
-            return this.http.get(this.getApiUrl() + "/assets/home-page.json", {responseType: 'text'})
+            return this.http.get(this.getApiUrl() + "/assets/home-page-2.json", {responseType: 'text'})
                 .toPromise()
                 .then((results) => {
                     return JSON.parse(results) as SitePage;

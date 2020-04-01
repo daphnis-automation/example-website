@@ -1,4 +1,7 @@
 export enum BodyType {
-    Component = "Component",
-    HtmlBlock = "HtmlBlock"
+    Quickstart = "Quickstart",
+    CardList = "CardList",
+    ContentList = "ContentList",
+    CampaignList = "CampaignList",
+    ProductCardList = "ProductCardList"
 }

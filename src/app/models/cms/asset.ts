@@ -7,5 +7,6 @@ export class Asset {
     alt: string;
     src: string;
     link: Link;
+    color: string;
 }
                             
