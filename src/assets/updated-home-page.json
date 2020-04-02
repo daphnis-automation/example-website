@@ -572,11 +572,11 @@
                             "asset": {
                                 "ratio": "6:5",
                                 "size": {
-                                    "width": 50,
-                                    "height": 50
+                                    "width": 288,
+                                    "height": 240
                                 },
                                 "alt": "A nice cargo bike picture",
-                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",                                
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
                             },
                             "link": null
                         },
@@ -589,10 +589,10 @@
                                     "height": 240
                                 },
                                 "alt": "Nice e-bike",
-                                "src": "https://cdn.webshopapp.com/shops/269119/files/290474634/211x211x2/crown-new-york-28-inch-stadsfiets-55cm-7v-zwart.jpg",
+                                "src": "https://i.ibb.co/RTNLpvD/bike-1-thumb.jpg"
                             },
                             "link": null
-                        }                     
+                        }                        
                     ],
                     "link": {
                         "rel": null,
@@ -618,7 +618,7 @@
                                     "height": 240
                                 },
                                 "alt": "A nice cargo bike picture",
-                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
                             },
                             "link": null
                         }
@@ -647,7 +647,7 @@
                                     "height": 240
                                 },
                                 "alt": "A nice cargo bike picture",
-                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
                             },
                             "link": null
                         }
@@ -676,7 +676,7 @@
                                     "height": 240
                                 },
                                 "alt": "A nice cargo bike picture",
-                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
                             },
                             "link": null
                         }
