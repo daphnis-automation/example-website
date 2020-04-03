@@ -75,14 +75,6 @@
 
     <br>
 
-    <!-- <div class="bike-grid"  rowHeight="6:8">
-        <div><img src="{{bodyContentList.value[0].media[0].asset.src}}" alt="{{bodyContentList.value[0].media[0].asset.alt}}"></div>
-        <div class="bike-grid-description" >
-            <div [innerHTML] = "bodyContentList.value[0].content" >
-            </div>
-        </div>
-    </div> -->
-
     <div class="bike-grid">
         <mat-grid-list  cols="5" rowHeight="2:3">
             <mat-grid-tile class="bike-grid-part" [colspan]="3" [rowspan]="1">
@@ -100,26 +92,6 @@
 
     <br>
     <br>
-
-    
-
-    
-
-    <!-- <div class="headphones-card">
-        <mat-card class="headphones-card-item" *ngFor="let item of bodyCampaignList.value">
-                <p> {{item.title}}</p>
-                <div *ngFor="let element of item[0].media">
-                    <img mat-card-image src="{{element[0].asset.src}}">
-                    <p>{{element.link.title}}</p>
-                </div>
-                <img src="{{item.media.asset.src}}" alt="">
-                <img mat-card-image src="{{item.media.asset.src}}">
-            
-            <img mat-card-image src="{{item.media.asset.src}}">
-            <mat-card-content>desc</mat-card-content>
-            <mat-card-content style="text-align:center;">{{item.media.link.title}}</mat-card-content>	
-        </mat-card>
-    </div> -->
 
     <div class="headphones-card">
         <div class="headphones-card-first">
@@ -156,163 +128,30 @@
     <div class="unique-card-header">{{bodyProductCardList.header}}</div>
     <div class="unique-cards-div">
 
-        <!-- <p ng-bind="numberofButtons"> </p> -->
-        <mat-card class="unique-cards" >
+        <mat-card class="unique-cards" *ngFor="let item of bodyProductCardList.value;">
             <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
             <br>
-            <div *ngIf="numberofButtons[0] < 2"><!-- ; else #elseBlock -->
-                <img [src]="nameofPictures[0][0]" alt="">
-            </div>
-
-            <!-- <ng-template #elseBlock>
-                <div [ngSwitch]="color">
-                    <img *ngSwitchCase="" src="" alt="">
+            <div *ngIf="item.options !== undefined; else elseBlock"><!-- ; else #elseBlock -->
+                <div [ngSwitch]="currentPhoto" *ngFor="let element of item.media; let i = index">
+                    <img mat-card-image *ngSwitchCase="item.options.mediaSwitches[i].mediaSeqNo" [src]="element.asset.src" [alt]="element.asset.alt">
                 </div>
-            </ng-template> -->
-                
-                 
-            <mat-card-content class="unique-cards-content">{{bodyProductCardList.value[0].price}}</mat-card-content>
-            <p>{{bodyProductCardList.value[0].link.title}}</p>
-            <div class="unique-cards-content-color" *ngIf="numberofButtons[0] > 1">
-                <div class="unique-cards-content-colored-button" *ngFor="let item of nameofColors[0]">
-                    <button mat-mini-fab style="background-color:{{item}};"></button>
+            </div>
+            <ng-template #elseBlock>
+                <img mat-card-image [src]="item.media[0].asset.src" alt="item.media[0].asset.src">
+            </ng-template>
+            <mat-card-content class="unique-cards-content">{{item.price}}</mat-card-content>
+            <p>{{item.link.title}}</p>
+            <div class="unique-cards-content-color" *ngIf="item.options !== undefined">
+                <div class="unique-cards-content-colored-button" *ngFor="let buttonIndex of item.options.mediaSwitches">
+                    <button mat-mini-fab [style.background-color]="buttonIndex.color" (click)="changePhoto(buttonIndex.mediaSeqNo)"></button>
                 </div>
             </div> 
-
-            
-
             <br><br>
             <button mat-raised-button class="unique-cards-button">Add to Chart</button>
             <br><br>
             <a href="#" class="unique-cards-description">+Add to Compare</a>
-        </mat-card> 
-
-        <!-- ******************************************************************************   -->
-        <!--
-        <!-- <mat-card class="unique-cards" >
-            <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
-            <br>
-            <div *ngIf="currentPhoto2; then thenBlock2; else elseBlock2;"></div>
-                <ng-template #thenBlock2>
-                    <img mat-card-image class="unique-cards-image-first" src="{{bodyProductCardList.value[1].media[0].asset.src}}" alt="{{bodyProductCardList.value[1].media[0].asset.alt}}">
-                </ng-template>
-                <ng-template #elseBlock2>
-                    <img mat-card-image class="unique-cards-image-second"  src="{{bodyProductCardList.value[1].media[1].asset.src}}" alt="{{bodyProductCardList.value[1].media[1].asset.alt}}">    
-                </ng-template>
-                 
-            <mat-card-content class="unique-cards-content">{{bodyProductCardList.value[1].price}}</mat-card-content>
-            <p>{{bodyProductCardList.value[1].link.title}}</p>
-            <div class="unique-cards-content-color">
-                <div class="unique-cards-content-colored-button">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[1].media[0].asset.color}};" ></button>
-                </div>
-                <div class="unique-cards-content-colored-button-2">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[1].media[1].asset.color}};" ></button>
-                </div>
-
-            </div>
-
-            <br><br>
-            <button mat-raised-button class="unique-cards-button">Add to Chart</button>
-            <br><br>
-            <a href="#" class="unique-cards-description">+Add to Compare</a>
-        </mat-card> -->
-
-
-
-                <!-- ******************************************************************************   -->
-
-
-
-
-        <!-- <mat-card class="unique-cards" >
-            <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
-            <br>
-            <div *ngIf="currentPhoto3; then thenBlock3; else elseBlock3;"></div>
-                <ng-template #thenBlock3>
-                    <img mat-card-image class="unique-cards-image-first" src="{{bodyProductCardList.value[2].media[0].asset.src}}" alt="{{bodyProductCardList.value[2].media[0].asset.alt}}">
-                </ng-template>
-                <ng-template #elseBlock3>
-                    <img mat-card-image class="unique-cards-image-second"  src="{{bodyProductCardList.value[2].media[1].asset.src}}" alt="{{bodyProductCardList.value[2].media[1].asset.alt}}">    
-                </ng-template>
-                 
-            <mat-card-content class="unique-cards-content">{{bodyProductCardList.value[2].price}}</mat-card-content>
-            <p>{{bodyProductCardList.value[2].link.title}}</p>
-            <div class="unique-cards-content-color">
-                <div class="unique-cards-content-colored-button">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[2].media[0].asset.color}};" ></button>
-                </div>
-                <div class="unique-cards-content-colored-button-2">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[2].media[1].asset.color}};" ></button>
-                </div>
-
-            </div>
-
-            <br><br>
-            <button mat-raised-button class="unique-cards-button">Add to Chart</button>
-            <br><br>
-            <a href="#" class="unique-cards-description">+Add to Compare</a>
-        </mat-card> -->
-
-                <!-- ******************************************************************************   -->
-
-
-        <!-- <mat-card class="unique-cards" >
-            <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
-            <br>
-            <div *ngIf="currentPhoto4; then thenBlock4; else elseBlock4;"></div>
-                <ng-template #thenBlock4>
-                    <img mat-card-image class="unique-cards-image-first" src="{{bodyProductCardList.value[3].media[0].asset.src}}" alt="{{bodyProductCardList.value[3].media[0].asset.alt}}">
-                </ng-template>
-                <ng-template #elseBlock4>
-                    <img mat-card-image class="unique-cards-image-second"  src="{{bodyProductCardList.value[3].media[1].asset.src}}" alt="{{bodyProductCardList.value[3].media[1].asset.alt}}">    
-                </ng-template>
-                 
-            <mat-card-content class="unique-cards-content">{{bodyProductCardList.value[3].price}}</mat-card-content>
-            <p>{{bodyProductCardList.value[3].link.title}}</p>
-            <div class="unique-cards-content-color">
-                <div class="unique-cards-content-colored-button">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[3].media[0].asset.color}};"></button>
-                </div>
-                <div class="unique-cards-content-colored-button-2">
-                    <button mat-mini-fab style="background-color:{{bodyProductCardList.value[3].media[1].asset.color}};" ></button>
-                </div>
-
-            </div>
-
-            <br><br>
-            <button mat-raised-button class="unique-cards-button">Add to Chart</button>
-            <br><br>
-            <a href="#" class="unique-cards-description">+Add to Compare</a>
-        </mat-card> -->
-        
+        </mat-card>        
     </div>
-
-    <!-- <div class="unique-cards-div">
-        <mat-card class="unique-cards" >
-            <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
-            <br>
-            <div *ngIf="currentPhoto; then thenBlock; else elseBlock;"></div>
-                <ng-template #thenBlock>
-                    <img mat-card-image class="unique-cards-image-first" src="{{bodyProductCardList.value[0].media[0].asset.src}}" alt="{{bodyProductCardList.value[0].media[0].asset.alt}}">
-                </ng-template>
-                <ng-template #elseBlock>
-                    <img mat-card-image class="unique-cards-image-second"  src="{{bodyProductCardList.value[0].media[1].asset.src}}" alt="{{bodyProductCardList.value[0].media[1].asset.alt}}">    
-                </ng-template>
-            <mat-card-content class="unique-cards-content">{{bodyProductCardList.value[0].price}}</mat-card-content>
-            <p>{{bodyProductCardList.value[0].link.title}}</p>
-            <div class="unique-cards-content-color">
-                <button mat-mini-fab class="unique-cards-content-colored-button" style="background-color:{{bodyProductCardList.value[0].media[0].asset.color}};" (click)=changePhoto()></button>  
-                <button mat-mini-fab class="unique-cards-content-colored-button-2" style="background-color:{{bodyProductCardList.value[0].media[1].asset.color}};" (click)=changePhoto()></button>
-            </div>
-
-            <br><br>
-            <button mat-raised-button class="unique-cards-button">Add to Chart</button>
-            <br><br>
-            <a href="#" class="unique-cards-description">+Add to Compare</a>
-        </mat-card>
-        
-    </div> -->
 </div>
     
     

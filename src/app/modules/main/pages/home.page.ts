@@ -25,7 +25,8 @@ export class HomePage implements OnInit  {
     numberofButtons: Array<number> = [];
     nameofColors: Array<Array<string>> = new Array();
     nameofPictures: Array<Array<string>> = new Array();
-    currentPhoto: boolean;
+    currentPhoto: number;
+
     
     
     
@@ -35,25 +36,19 @@ export class HomePage implements OnInit  {
         private layoutService: LayoutService) { 
     }
 
-    /* changePhoto(currentPhoto) {
-        this.currentPhoto = true;
-    } */
-    /* changePhoto() {
-        this.currentPhoto = true;
+    changePhoto(mediaSeqNo) {
+        this.currentPhoto = mediaSeqNo;
     }
-
-    changePhoto2() {
-        this.currentPhoto = false;
-    }
-    } */
     
     
     async ngOnInit() {
         console.log('HomePage.ngOnInit()');
         var result = await this.cmsService.getSitePage('home-page');
         this.layoutService.loadMetaData(result);
+        this.heroImageUrl = result.hero.media[0].asset.src;
+
+        this.currentPhoto = 0;
         
-        this.currentPhoto = true;
 
         let index = 0;
         result.sections[4].value.forEach(element => {
@@ -88,11 +83,6 @@ export class HomePage implements OnInit  {
             index++;
         })
 
-
-        console.log(this.numberofButtons)
-        console.log(this.nameofColors)
-        console.log(this.nameofPictures)
-        
         
         result.hero.alias === 'home-herobanner' ? this.bodyEntrance=result.hero : this.bodyEntrance = null;
         this.bodyQuickStart = result.sections.find(c=>c.type === BodyType.Quickstart && c.alias === 'home-quickstart');
