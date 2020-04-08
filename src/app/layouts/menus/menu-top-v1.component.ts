@@ -9,6 +9,14 @@ import { SiteMenu } from '../../models/cms/site-menu';
 })
 export class MenuTopV1Component implements OnInit {
 
+    currentMenu: number;
+
+    changeMenu(seqNo){
+        this.currentMenu = seqNo;
+        console.log(seqNo)
+    }
+
+    
     public siteMenu: SiteMenu;
 
     constructor(private cmsService: CmsService) { 
@@ -18,6 +26,7 @@ export class MenuTopV1Component implements OnInit {
     async ngOnInit(): Promise<void> {
         console.log('MenuTopV1Component.ngOnInit()');
         this.siteMenu = await this.cmsService.getSiteMenu('top-menu');
+        this.currentMenu = 0;
     }
 
 }

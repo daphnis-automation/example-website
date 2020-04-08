@@ -29,7 +29,23 @@
                         "title": "Sub Menu 1",
                         "label": "This is Sub Menu 1",
                         "url": "/shop/categories/e-bikes"
-                    }                    
+                    },
+                    "children": [
+                        {
+                            "id": "222232",
+                            "seqNo": 0,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Menu 2",
+                                "label": "This is menu 2",
+                                "url": "/shop/categories"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        }
+                    ]                    
                 },
                 {
                     "id": "222224",

@@ -37,7 +37,7 @@ export class CmsService {
     public getSiteMenu(alias: string): Promise<SiteMenu> {
         console.log('CmsService.getSiteMenu()');
         try {
-            return this.http.get(this.getApiUrl() + "/assets/top-menu.json", {responseType: 'text'})
+            return this.http.get(this.getApiUrl() + "/assets/top-menu-updated.json", {responseType: 'text'})
                 .toPromise()
                 .then((results) => {
                     return JSON.parse(results) as SiteMenu;

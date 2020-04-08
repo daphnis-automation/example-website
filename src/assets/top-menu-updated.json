@@ -1,0 +1,455 @@
+{
+    "id": "123456789012346",
+    "alias": "top-menu",
+    "languageCode": "en",
+    "version": "1",
+    "state": "published",
+    "updatedOn": "2020-03-12",
+    "updatedBy": {
+        "nickname": "admin"
+    },
+    "menuItems": [
+        {
+            "id": "222232",
+            "seqNo": 0,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Alle Fietsen",
+                "label": "This is Alle Fietsen",
+                "url": "/allefietsen"
+            },
+            "config": {},
+            "children": [ 
+                {
+                    "id": "222232",
+                    "seqNo": 5,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Herenfietsen",
+                        "label": "This is herenfietsen",
+                        "url": "/herenfietsen"
+                    },
+                    "config": {},
+                    "children": [
+                        {
+                            "id": "222232",
+                            "seqNo": 51,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Alle herenfietsen",
+                                "label": "This is alle herenfietsen",
+                                "url": "/herenfietsen"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 52,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Eletrische fietsen",
+                                "label": "This is eletrische fietsen",
+                                "url": "/eletrischefietsen"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 53,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Mountain Bikes",
+                                "label": "This is mountain bikes",
+                                "url": "/mountainbikes"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 54,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Bmx",
+                                "label": "This is Bmx",
+                                "url": "/bmx"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        }        
+                     ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 6,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Damesfietsen",
+                        "label": "This is damesfietsen",
+                        "url": "/damesfietsen"
+                    },
+                    "config": {},
+                    "children": [
+                        {
+                            "id": "222232",
+                            "seqNo": 61,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Fietstype1",
+                                "label": "This is Fietstype1",
+                                "url": "/fietstype1"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 62,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Fietstype2",
+                                "label": "This is Fietstype2",
+                                "url": "/fietstype2"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 63,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "fietstype3",
+                                "label": "This is Fietstype3",
+                                "url": "/fietstype3"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 64,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "fietstype4",
+                                "label": "This is fietstype4",
+                                "url": "/fietstype4"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        }    
+
+                     ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 7,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Kinderfietsen",
+                        "label": "This is kinderfietsen",
+                        "url": "/kinderfietsen"
+                    },
+                    "config": {},
+                    "children": [
+                        {
+                            "id": "222232",
+                            "seqNo": 71,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Fietstype1",
+                                "label": "This is Fietstype1",
+                                "url": "/fietstype1"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 72,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Fietstype2",
+                                "label": "This is Fietstype2",
+                                "url": "/fietstype2"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 73,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "fietstype3",
+                                "label": "This is Fietstype3",
+                                "url": "/fietstype3"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 74,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "fietstype4",
+                                "label": "This is fietstype4",
+                                "url": "/fietstype4"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        }    
+                     ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 8,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Meer",
+                        "label": "This is meer",
+                        "url": "/meer"
+                    },
+                    "config": {},
+                    "children": [
+                        {
+                            "id": "222232",
+                            "seqNo": 81,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Aanbindingen",
+                                "label": "This is Aanbindingen",
+                                "url": "/aanbindingen"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 82,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Accessoire Categorie 1",
+                                "label": "This is Accessoire Categorie 1",
+                                "url": "/accessoirecategorie1"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 83,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Accessoire Categorie 2",
+                                "label": "This is Accessoire Categorie 2",
+                                "url": "/accessoirecategorie2"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 84,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Accessoire Categorie 3",
+                                "label": "This is Accessoire Categorie 3",
+                                "url": "/accessoirecategorie3"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        },
+                        {
+                            "id": "222232",
+                            "seqNo": 85,
+                            "type": "link",
+                            "link": {
+                                "target": "",
+                                "rel": "",
+                                "title": "Accessoire Categorie 4",
+                                "label": "This is Accessoire Categorie 4",
+                                "url": "/accessoirecategorie4"
+                            },
+                            "config": {},
+                            "children": [ ]
+                        }    
+                     ]
+                }        
+            ]
+        },
+        {
+            "id": "222232",
+            "seqNo": 1,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "E-Bikes",
+                "label": "This is e-bikes",
+                "url": "/e-bikes"
+            },
+            "config": {},
+            "children": [ ]
+        },
+        {
+            "id": "222232",
+            "seqNo": 2,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Bakfietsen",
+                "label": "This is Bakfietsen",
+                "url": "/bakfietsen"
+            },
+            "config": {},
+            "children": [ ]
+        },
+        {
+            "id": "222232",
+            "seqNo": 3,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Vouwfietsen",
+                "label": "This is Vouwfietsen",
+                "url": "/vouwfietsen"
+            },
+            "config": {},
+            "children": [ ]
+        },
+        {
+            "id": "222232",
+            "seqNo": 4,
+            "type": "link",
+            "link": {
+                "target": "",
+                "rel": "",
+                "title": "Meer",
+                "label": "This is Meer",
+                "url": "/meer"
+            },
+            "config": {},
+            "children": [ 
+
+                {
+                    "id": "222232",
+                    "seqNo": 41,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Aanbindingen",
+                        "label": "This is Aanbindingen",
+                        "url": "/aanbindingen"
+                    },
+                    "config": {},
+                    "children": [ ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 42,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Accessoire Categorie 1",
+                        "label": "This is Accessoire Categorie 1",
+                        "url": "/accessoirecategorie1"
+                    },
+                    "config": {},
+                    "children": [ ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 43,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Accessoire Categorie 2",
+                        "label": "This is Accessoire Categorie 2",
+                        "url": "/accessoirecategorie2"
+                    },
+                    "config": {},
+                    "children": [ ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 44,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Accessoire Categorie 3",
+                        "label": "This is Accessoire Categorie 3",
+                        "url": "/accessoirecategorie3"
+                    },
+                    "config": {},
+                    "children": [ ]
+                },
+                {
+                    "id": "222232",
+                    "seqNo": 45,
+                    "type": "link",
+                    "link": {
+                        "target": "",
+                        "rel": "",
+                        "title": "Accessoire Categorie 4",
+                        "label": "This is Accessoire Categorie 4",
+                        "url": "/accessoirecategorie4"
+                    },
+                    "config": {},
+                    "children": [ ]
+                }    
+            ]
+        }                  
+    ]
+}
