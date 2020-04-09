@@ -16,7 +16,7 @@ import { element } from 'protractor';
 })
 export class ProductPage implements OnInit  {
 
-    
+    numberofBicyle: number = 1;
     
     
  
@@ -27,7 +27,8 @@ export class ProductPage implements OnInit  {
 
     
     
-    async ngOnInit() { }
+    async ngOnInit() {
+     }
 
     
     
