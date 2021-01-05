@@ -1,12 +1,11 @@
 <div >
-    <div class="hero-banner" [style.background-image]="'url(' + heroImageUrl + ')'">
+    <div class="{{bodyEntrance.config.sectionCssClass}}" [style.background-image]="'url(' + heroImageUrl + ')'">
 
         <div class="overlay" fxLayout="row" fxLayoutAlign="center center">
             <div>
-                <h1>Experience your Best Ride</h1>
-                <p>My Bike & Co is the supplier of affordable and quality bikes.</p>
-                <a mat-stroked-button color="white" routerLink="/catalog">
-                    Explore our products
+                <p [innerHtml]="bodyEntrance.media[0].message"></p>
+                <a mat-stroked-button color="white" routerLink="{{bodyEntrance.media[0].link.url}}">
+                    {{bodyEntrance.media[0].link.label}}
                 </a>
             </div>
             <div fxFlex="10"></div>
@@ -46,4 +45,115 @@
         </section>
     </div>
     <div class="clear">&nbsp;</div>
+
+    <div>
+        <div class="categories-bikes">
+            <h1>My Bike</h1>
+            <mat-divider></mat-divider>
+            <mat-nav-list class="categories-bikes-nav-list">
+                <mat-list-item *ngFor="let item of bodyQuickStart.value">
+                  <mat-icon matListIcon >keyboard_arrow_right</mat-icon>
+                  <h3 matLine> {{item.label}} </h3>
+                </mat-list-item>
+              </mat-nav-list>
+        </div>
+    
+        <div class="bike-types">
+            <mat-card class="example-card" *ngFor="let item of bodyCardList.value" id="bike-types-cards">
+                <mat-card-header>
+                  <mat-card-title class="bike-types-header">{{item.title}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{item.media[0].asset.src}}" alt="{{item.media[0].asset.alt}}">
+                <mat-card-content>
+                  <p class="bike-types-cards-content">
+                    {{item.link.title}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="bike-grid">
+        <mat-grid-list  cols="5" rowHeight="2:3">
+            <mat-grid-tile class="bike-grid-part" [colspan]="3" [rowspan]="1">
+                <div class="bike-grid-img"><img src="{{bodyContentList.value[0].media[0].asset.src}}" alt="{{bodyContentList.value[0].media[0].asset.alt}}"></div>
+            </mat-grid-tile>
+            <mat-grid-tile class="bike-grid-part" [colspan]="2" [rowspan]="1">
+                <div class="bike-grid-description" >
+                    <div [innerHTML] = "bodyContentList.value[0].content" >
+                    </div>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    
+
+    <br>
+    <br>
+
+    <div class="headphones-card">
+        <div class="headphones-card-first">
+            <mat-card>
+                    <mat-card-title class="headphones-card-first-title"> {{bodyCampaignList.value[0].caption}}</mat-card-title>
+                    <div class="headphones-card-first-pic">
+                        <div class="headphones-card-first-pic-item" *ngFor="let element of bodyCampaignList.value[0].media">
+                            <img mat-card-image src="{{element.asset.src}}" alt="{{element.asset.alt}}">
+                        </div>
+                    </div>
+            </mat-card>
+        </div>
+
+        <div class="headphones-card-other" *ngFor="let item of bodyCampaignList.value.slice(1)">
+            <mat-card>
+                <mat-card-title class="headphones-card-other-title"> {{item.caption}}</mat-card-title>
+                <div class="headphones-card-other-inside">
+                    <img mat-card-image src="{{item.media[0].asset.src}}" alt="{{item.media[0].asset.alt}}">
+                </div>
+                <mat-card-content class="headphones-card-other-content">
+                    <p>
+                       {{item.media[0].link.title}} 
+                    </p>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="unique">
+    <div class="unique-card-header">{{bodyProductCardList.header}}</div>
+    <div class="unique-cards-div">
+
+        <mat-card class="unique-cards" *ngFor="let item of bodyProductCardList.value;">
+            <mat-card-title><mat-icon class="unique-cards-icon">favorite</mat-icon></mat-card-title>
+            <br>
+            <div *ngIf="item.options !== undefined; else elseBlock"><!-- ; else #elseBlock -->
+                <div [ngSwitch]="currentPhoto" *ngFor="let element of item.media; let i = index">
+                    <img mat-card-image *ngSwitchCase="item.options.mediaSwitches[i].mediaSeqNo" [src]="element.asset.src" [alt]="element.asset.alt">
+                </div>
+            </div>
+            <ng-template #elseBlock>
+                <img mat-card-image [src]="item.media[0].asset.src" alt="item.media[0].asset.src">
+            </ng-template>
+            <mat-card-content class="unique-cards-content">{{item.price}}</mat-card-content>
+            <p>{{item.link.title}}</p>
+            <div class="unique-cards-content-color" *ngIf="item.options !== undefined">
+                <div class="unique-cards-content-colored-button" *ngFor="let buttonIndex of item.options.mediaSwitches">
+                    <button mat-mini-fab [style.background-color]="buttonIndex.color" (click)="changePhoto(buttonIndex.mediaSeqNo)"></button>
+                </div>
+            </div> 
+            <br><br>
+            <button mat-raised-button class="unique-cards-button">Add to Chart</button>
+            <br><br>
+            <a href="#" class="unique-cards-description">+Add to Compare</a>
+        </mat-card>        
+    </div>
+</div>
+    
+    
+    
 </div>

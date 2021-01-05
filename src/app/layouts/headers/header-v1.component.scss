@@ -16,3 +16,20 @@ mat-toolbar {
         text-decoration:none;
     }
 }
+
+.menu-search-bar {
+    display: inline;
+}
+
+.menu-search-bar input{
+    width: 65%;
+    height: 40px; 
+    border-radius: 5px;
+}
+
+.menu-search-bar button {
+    background-color: blue; 
+    color: rgb(255, 255, 255); 
+    width: 30%; 
+    height: 50px;
+}

@@ -1,0 +1,696 @@
+{
+    "id": "123456789012345",
+    "alias": "home-page",
+    "languageCode": "en",
+    "version": "1",
+    "state": "published",
+    "updatedOn": "2020-03-12",
+    "updatedBy": {
+        "nickname": "admin"
+    },
+    "title": "Welcome to Hoopfietsen",
+    "metadata": {
+        "named": [
+            {
+                "name": "keywords",
+                "content": "a,b,c"
+            },
+            {
+                "name": "description",
+                "content": "Description in plain text"
+            }
+        ],
+        "properties": [
+            {
+                "property": "og:type",
+                "content": "website"
+            },
+            {
+                "property": "og:site_name",
+                "content": "My Bike & Co"
+            },
+            {
+                "property": "og:image",
+                "itemprop": "image primaryImageOfPage",
+                "content": "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded"
+            }
+        ],
+        "links": [
+            {
+                "rel": "canonical",
+                "content": "https://website.com"
+            },
+            {
+                "rel": "shortcut icon",
+                "content": "url_to_image"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "Stack overflow",
+                "href": "/opensearch.xml"
+            }
+        ]
+    },
+    "hero": {
+        "alias": "home-herobanner",
+        "config": {
+            "sectionCssClass": "hero-banner"
+        },
+        "media": [
+            {
+                "link": {
+                    "label": "Explore Catalog",
+                    "url": "/catalog"
+                },
+                "asset": {
+                    "ratio": "5:2",
+                    "size": {
+                        "width": 1950,
+                        "height": 780
+                    },
+                    "alt": "Experience the best driving behavior",
+                    "src": "https://i.ibb.co/Yk0HR8w/landing-bg-vienna.jpg"
+                },
+                "message": "<h1>Experience the best driving behavior<\/h1><p>Hoopfietsen is the supplier of Affordable-Quality bicycles.<\/p>"
+            }
+        ]
+    },       
+    "sections": [
+        {
+            "seqNo": 0,
+            "type": "Quickstart",
+            "alias": "home-quickstart",
+            "config": {
+                "sectionCssClass": "quickstart",
+                "containerCssClass": "default-container",
+                "itemCssClass": "uppercase",
+                "icon": "bookmark",
+                "injectStyle": "<style>.quickstart .mat-icon { color: #9ebcf9; } .uppercase { color:color; }</style>"
+            },
+            "value": [
+                {
+                    "rel": null,
+                    "title": "All e-bikes",
+                    "label": "E-Bikes",
+                    "url": "/selectie/e-bikes"
+                },
+                {
+                    "rel": null,
+                    "title": "All transport bicycles",
+                    "label": "Transport",
+                    "url": "/selectie/transport"
+                },
+                {
+                    "rel": null,
+                    "title": "All sporty bicycles",
+                    "label": "Sportief",
+                    "url": "/selectie/sportief"
+                },
+                {
+                    "rel": null,
+                    "title": "Bicyles for ladies",
+                    "label": "Dames",
+                    "url": "/categorie/dames"
+                },
+                {
+                    "rel": null,
+                    "title": "Bicycles for men",
+                    "label": "Heren",
+                    "url": "/categorie/heren"
+                },
+                {
+                    "rel": null,
+                    "title": "Bicycles for kids",
+                    "label": "Kids",
+                    "url": "/categorie/kids"                    
+                }
+            ]
+        },
+        {
+            "seqNo": 1,
+            "type": "CardList",
+            "alias": "home-categories",
+            "config": {
+                "sectionCssClass": "category-showcase",
+                "containerCssClass": "default-container",
+                "headerCssClass": null,
+                "injectStyle": "<style>.category-showcase h1 { text-align:center; }</style>"
+            },
+            "header": "Discover hoopfietsen",
+            "value": [
+                {
+                    "title": "Cargo bikes",
+                    "caption": "We have new bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice bakfiets picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the cargo bikes",
+                        "label": null,
+                        "url": "/categories/bakfietsen"
+                    }                    
+                },
+                {
+                    "title": "Transport bikes",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },                    
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "E-Bikes",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "Sportief",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice bakfiets picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "Herenfietsen",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice bakfiets picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                },
+                {
+                    "title": "Damesfietsen",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "category"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice bakfiets picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    }
+                }
+            ]
+        },
+        {
+            "seqNo": 2,
+            "type": "ContentList",
+            "alias": "home-banner",
+            "config": {
+                "sectionCssClass": "switched-bg",
+                "containerCssClass": "default-container",
+                "headerCssClass": null,
+                "injectStyle": null
+            },
+            "header": null,
+            "value": [
+                {
+                    "content": "<h2>New products<\/h2><p>Nullam dignissim elit ut urna rutrum, a fermentum mi auctor. Mauris efficitur magna orci, et dignissim lacus scelerisque sit amet. Proin malesuada tincidunt nisl ac commodo. Vivamus eleifend porttitor ex sit amet suscipit. Vestibulum at ullamcorper lacus, vel facilisis arcu. Aliquam erat volutpat.<\/p><ul><li>High-precision lens provides a clearer picture and a better view for 3D.<\/li><li>55\" class screen full array LED TV<\/li><li>With stand: 48.98\"W x 30.69\"H x 10.59\"D<\/li><li>Display type: LED, Resolution: 1920 x 1080, Contrast ratio: 2M:1<\/li><li>Motion Rate: 120<\/li><\/ul>",
+                    "media": [
+                        {
+                            "link": {
+                                "rel": null,
+                                "title": "Lets see all the cargo bikes",
+                                "label": "More info...",
+                                "url": "/categories/bakfietsen"
+                            },
+                            "asset": {
+                                "ratio": "6:3",
+                                "size": {
+                                    "width": 850,
+                                    "height": 424
+                                },
+                                "alt": "Discover My Bike & Co",
+                                "src": "https://i.ibb.co/f1ShdqG/banner-1.jpg"
+                            },
+                            "message": null
+                        }                        
+                    ],
+                    "config": { 
+                        "mediaCol": 0,
+                        "mediaColFlex": 50,
+                        "gutterFlex": 4
+                    }
+                }
+            ]
+        },
+        {
+            "seqNo": 3,
+            "type": "CampaignList",
+            "alias": "home-campaigns",
+            "config": {
+                "sectionCssClass": null,
+                "containerCssClass": "default-container",
+                "headerCssClass": null,
+                "injectStyle": null
+            },
+            "value": [
+                {
+                    "title": "Follow us on Twitter",
+                    "caption": "Lorum ipsum etc.",
+                    "config": {
+                        "cssClass": "campaign media-only",
+                        "mediaBreakpoint": 2
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bikes picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice bakfiets picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        },
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        }                                                                                                                              
+                    ],
+                    "link": {
+                        "rel": "ugc nofollow",
+                        "title":null,
+                        "label": null,
+                        "url": "#"
+                    }
+                },
+                {
+                    "title": "Follow us on Twitter",
+                    "caption": "Lorum ipsum etc.",
+                    "config": {
+                        "cssClass": "campaign media-only",
+                        "mediaBreakpoint": 2
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        }
+                    ],
+                    "link": {
+                        "rel": "ugc nofollow",
+                        "title":null,
+                        "label": null,
+                        "url": "#"
+                    }
+                },
+                {
+                    "title": "Follow us on Twitter",
+                    "caption": "Lorum ipsum etc.",
+                    "config": {
+                        "cssClass": "campaign",
+                        "mediaBreakpoint": 2
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "1:1",
+                                "size": {
+                                    "width": 150,
+                                    "height": 150
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg"
+                            },
+                            "link": {
+                                "rel": "ugc nofollow",
+                                "title": "A nice cargo bike picture",
+                                "label": null,
+                                "url": "http://twitter_post"
+                            }
+                        }
+                    ],
+                    "link": {
+                        "rel": "ugc nofollow",
+                        "title":null,
+                        "label": null,
+                        "url": "#"
+                    }
+                }                                                         
+            ]
+        },
+        {
+            "seqNo": 4,
+            "type": "ProductCardList",
+            "alias": "home-products",
+            "config": {
+                "sectionCssClass": "product-showcase switched-bg",
+                "containerCssClass": "default-container",
+                "headerCssClass": null,
+                "injectStyle": "<style> .product-showcase h1 { text-align:center; font-size:200%;  }</style>"
+            },
+            "header": "Bikes for this season",
+            "value": [
+                {
+                    "title": "cargo bikes",
+                    "caption": null,
+                    "config": {
+                        "cssClass": "product"
+                    },
+                    "options":{
+                        "mediaSwitches": [
+                            { "mediaSeqNo": 0, "color": "red" },
+                            { "mediaSeqNo": 1, "color": "blue" }
+                        ]
+                    },
+                    "media": [
+                        {
+                            "seqNo": 0,
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 50,
+                                    "height": 50
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",                                
+                            },
+                            "link": null
+                        },
+                        {
+                            "seqNo": 1,
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "Nice e-bike",
+                                "src": "https://cdn.webshopapp.com/shops/269119/files/290474634/211x211x2/crown-new-york-28-inch-stadsfiets-55cm-7v-zwart.jpg",
+                            },
+                            "link": null
+                        }                     
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the cargo bikeen",
+                        "label": null,
+                        "url": "/categories/cargo bikeen"
+                    },
+                    "price": "1000",
+                    "previousPrice": 0             
+                },
+                {
+                    "title": "Transport bikes",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "product"
+                    },                    
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    },
+                    "price": "1000",
+                    "previousPrice": 0                           
+                },
+                {
+                    "title": "E-Bikes",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "product"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    },
+                    "price": "1000",
+                    "previousPrice": 0                           
+                },
+                {
+                    "title": "E-Bikes",
+                    "caption": "We have new Transport bikes added",
+                    "config": {
+                        "cssClass": "product"
+                    },                      
+                    "media": [
+                        {
+                            "asset": {
+                                "ratio": "6:5",
+                                "size": {
+                                    "width": 288,
+                                    "height": 240
+                                },
+                                "alt": "A nice cargo bike picture",
+                                "src": "https://i.ibb.co/vjYf4SH/category-1-thumb.jpg",
+                            },
+                            "link": null
+                        }
+                    ],
+                    "link": {
+                        "rel": null,
+                        "title": "Lets see all the Transport bikes",
+                        "label": "More info...",
+                        "url": "/categories/transport-bikes"
+                    },
+                    "price": "1000",
+                    "previousPrice": 0                           
+                }
+            ]
+        }
+    ]
+}

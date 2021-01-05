@@ -2,8 +2,7 @@
     position:relative;
     display:block;
     min-height:600px;
-    // background-image:    url("");
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;       
   
@@ -34,3 +33,315 @@
     z-index:1;
     margin-top: -50px;
 }
+
+.categories-bikes {
+    width: 80%;
+    margin: auto;
+}
+
+.categories-bikes h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.categories-bikes-nav-list {
+    display: flex !important; text-transform: uppercase;
+}
+
+.categories-bikes-nav-list h3{
+    color: blue;
+}
+
+.bike-types {
+    width: 80%;
+    margin: auto;
+}
+
+.bike-types .bike-types-header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#bike-types-cards {
+    width: 20%; float: left; margin: 5%;background-color: #ccc;
+}
+
+.bike-types-cards-content {
+    margin:auto; 
+    text-align: center;
+}
+
+/* .bike-grid-img > ::ng-deep figure {
+    justify-content: flex-start !important;
+    display: inline; position: absolute; right: 0;
+}
+
+.bike-grid-description > ::ng-deep figure {
+    justify-content: flex-start !important;
+    display: inline; position: absolute; right: 0;
+} */
+
+.bike-grid{
+    width: 80%;
+    margin: auto;
+    float: left;
+    margin-left: 10%;
+    
+}
+
+
+.bike-grid-part > ::ng-deep figure {
+    justify-content: flex-start !important;
+    display: inline;
+}
+
+.bike-grid img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.bike-grid-description{
+    width: 100%; float: left; background-color: cornflowerblue; margin-left: 0; padding-top: 10%; padding-left: 2%; height: 100%;
+}
+
+.bike-grid-description h1{
+    font: 2em;
+    font-family: Tahoma;
+    color: red;
+    font-weight: bold;
+}
+
+.bike-grid-description p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#bike-grid-description-button {
+    background-color: royalblue;border-radius: 20px;color: whitesmoke; margin-top: 5%;height: 20%; width: 40%;
+}
+
+
+
+
+
+.headphones-card{
+    width: 80%; float: left; padding-left: 10%; margin-left: auto; margin-right: auto;
+}
+
+.headphones-card-first{
+    width: 25%;
+    margin-left: 3%;
+    float: left;
+    margin-top: 3%;
+}
+
+.headphones-card-first .headphones-card-first-title {
+    text-align: center;
+}
+
+.headphones-card-first:hover {
+    border: 2px solid #aaa;
+}
+
+/* .headphones-card-first-pic {
+    width: 100%;
+    height: 80%;
+    float: left;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headphones-card-first-pic-item {
+    width: 25%;
+    height: 5%;
+    float: left;
+    margin-left: 10%;
+    bottom: 0;
+    
+}
+*/
+
+
+
+.headphones-card-first-pic {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr" 11.22vh
+                   "1fr 1fr" 11.22vh
+                   "1fr 1fr" 11.22vh;
+}
+
+.headphones-card-first-pic .headphones-card-first-pic-item {
+    position: relative;
+    background:white;
+}
+
+.headphones-card-first-pic .headphones-card-first-pic-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.headphones-card-item {
+
+    float: left; width: 25%; margin: 3%; height: 5%;
+}
+
+.headphones-card-item:hover {
+    border: 2px solid #ccc;
+}
+
+.headphones-card-other {
+    float: left;
+    width: 25%;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+.headphones-card-other-title {
+    text-align: center;
+}
+
+.headphones-card-other .headphones-card-other-inside {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr" 33.22vh;
+}
+
+.headphones-card-other .headphones-card-other-inside img{
+    position: absolute;
+    width: 85%;
+    height: 55%;
+    object-fit: cover;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.headphones-card-other .headphones-card-other-content {
+    text-align: center;
+}
+
+.headphones-card-other:hover {
+    border: 2px solid #ccc;
+}
+
+.headphones-card-other-inside {
+    min-width: 80%;
+    min-height: 200%;
+}
+
+.unique {
+    float: left;
+    width: 90%; 
+    margin-top:3%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.unique .unique-card-header {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2%;
+}
+
+
+.unique-cards-div {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unique-cards {
+    text-align: center;
+    float: left;
+    width: 20%;
+    margin: 1%;
+    transition: all 1s;
+}
+
+.unique-cards-image-first{
+    display: inline;
+}
+
+.unique-cards-image-second {
+    display: inline;
+}
+
+
+.unique-cards-icon {
+    display: none;
+    right: 5px;
+    position:absolute;
+}
+
+.unique-cards-content {
+    text-align:center; color: blue; font-size: 1.2em;
+}
+
+.unique-cards-button {
+    display: none;
+    border: 2px solid blue;
+    border-radius: 10%;
+    color: slateblue;
+    margin-top:5%;
+}
+
+.unique-cards-button:hover{
+    background-color: blue;
+    color: snow;
+}
+
+.unique-cards-description{
+    display: none;
+}
+
+.unique-cards:hover {
+    border: 2px solid #aaa;
+}
+
+.unique-cards-content-color {
+    float: left;
+    width: 100%;
+    height: 40%;
+}
+
+.unique-cards-content-color .unique-cards-content-colored-button {
+    width: 20%;
+    float: left;
+    margin-left: 20%;
+    height: 20%;
+}
+/* 
+.unique-cards-content-color .unique-cards-content-colored-button-2 {
+    width: 20%;
+    float: left;
+    margin-left: 15%;
+    height: 20%;
+}
+ */
+
+.unique-cards:hover > .unique-cards-button {
+    display: inline;
+}
+
+.unique-cards:hover > .unique-cards-description{
+    display: inline;
+}
+
+.unique-cards:hover > .unique-cards-icon{
+    display: inline;
+}
+

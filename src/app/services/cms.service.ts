@@ -25,7 +25,7 @@ export class CmsService {
     public getSitePage(alias: string): Promise<SitePage> {
         console.log('CmsService.getSitePage()');
         try {
-            return this.http.get(this.getApiUrl() + "/assets/home-page.json", {responseType: 'text'})
+            return this.http.get(this.getApiUrl() + "/assets/updated-home-page.json", {responseType: 'text'})
                 .toPromise()
                 .then((results) => {
                     return JSON.parse(results) as SitePage;
@@ -37,7 +37,7 @@ export class CmsService {
     public getSiteMenu(alias: string): Promise<SiteMenu> {
         console.log('CmsService.getSiteMenu()');
         try {
-            return this.http.get(this.getApiUrl() + "/assets/top-menu.json", {responseType: 'text'})
+            return this.http.get(this.getApiUrl() + "/assets/top-menu-updated.json", {responseType: 'text'})
                 .toPromise()
                 .then((results) => {
                     return JSON.parse(results) as SiteMenu;

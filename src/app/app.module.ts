@@ -22,7 +22,7 @@ import { MenuSidebarV1Component } from './layouts/menus/menu-sidebar-v1.componen
     HttpClientModule,
     BrowserAnimationsModule, //NoopAnimationsModule, 
     FlexLayoutModule,
-    MaterialPart1Module
+    MaterialPart1Module,
   ],
   declarations: [
     AppComponent,

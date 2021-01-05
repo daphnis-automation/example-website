@@ -1,18 +1,84 @@
 <nav *ngIf="siteMenu">
     <ng-container *ngFor="let menuItem of siteMenu.menuItems">
+
+        <ng-container>
+            <a mat-button [title]="menuItem.link.label"
+                [target]="menuItem.link.target"
+                [rel]="menuItem.link.rel"
+                (click)="changeMenu(menuItem.seqNo)">
+                {{menuItem.link.title}}
+                <mat-icon *ngIf="menuItem.children.length > 0">expand_more</mat-icon>
+            </a>
+        
+        </ng-container>
+
+            <div [ngSwitch]="currentMenu" *ngFor="let templateItem of siteMenu.menuItems; let i of index"> 
+                <div *ngSwitchCase="templateItem.seqNo"> 
+                    <div *ngFor="let menuChild of templateItem.children">
+                        <mat-nav-list  *ngFor="let childrenofmenuChild of menuChild.children">
+                            <h3 matSubheader>{{menuChild.link.title}}</h3>
+                            <mat-list-item>
+                                <a matLine [title]="childrenofmenuChild.link.label"
+                                                    [href]="childrenofmenuChild.link.url"
+                                                    [target]="childrenofmenuChild.link.target"
+                                                    [rel]="childrenofmenuChild.link.rel">
+                                                    {{childrenofmenuChild.link.title}}</a>
+                            </mat-list-item>
+                        </mat-nav-list>
+                    </div>
+                </div>
+            </div>
+            
+       
+        
+
+
+        <!-- <ng-container *ngIf="menuItem.children || menuItem.children.length > 0">
+            <a mat-button [matMenuTriggerFor]="child" 
+                [title]="menuItem.link.label">                            
+                {{menuItem.link.title}}
+                <mat-icon >expand_more</mat-icon>
+            </a>
+
+            <ng-container>
+                <mat-nav-list #child>
+                    <a mat-list-item routerLink="/home">
+                        <span class="nav-caption">Home</span>
+                    </a>
+                    <a mat-list-item routerLink="/ownerxxxxxxxxxxxx" >
+                        <span class="nav-caption">Owner Actions</span>   
+                    </a>
+                    <a mat-list-item routerLink="#" >
+                        <span class="nav-caption">Account Actions</span>
+                    </a>
+                  </mat-nav-list>
+            </ng-container>
+            
+
+        </ng-container> -->
+
+
+
+
+
+
+
+
+
+
         <!-- LEVEL 1: Menu Items without children! -->
-        <ng-container *ngIf="!menuItem.children || menuItem.children.length <= 0">
+        <!-- <ng-container *ngIf="!menuItem.children || menuItem.children.length <= 0">
             <a mat-button [title]="menuItem.link.label"
                 [href]="menuItem.link.url"
                 [target]="menuItem.link.target"
                 [rel]="menuItem.link.rel">
                 {{menuItem.link.title}}
             </a>
-        </ng-container>
+        </ng-container> -->
 
 
         <!-- LEVEL 1: Menu Items containing children! -->
-        <ng-container *ngIf="menuItem.children && menuItem.children.length > 0">
+        <!-- <ng-container *ngIf="menuItem.children && menuItem.children.length > 0">
             <a mat-button [matMenuTriggerFor]="child" 
                 [title]="menuItem.link.label">                            
                 {{menuItem.link.title}}
@@ -21,9 +87,9 @@
             <mat-menu #child="matMenu">
                 
                 <ng-container *ngFor="let childMenu of menuItem.children">
-
+ -->
                     <!-- LEVEL 2: ChildMenuItem without children! -->
-                    <ng-container *ngIf="!childMenu.children || childMenu.children.length <= 0">
+                    <!-- <ng-container *ngIf="!childMenu.children || childMenu.children.length <= 0">
                         <ng-container *ngIf="childMenu.type === 'link'">
                             <a mat-menu-item [title]="childMenu.link.label"
                                     [href]="childMenu.link.url"
@@ -34,10 +100,10 @@
                         <ng-container *ngIf="childMenu.type === 'divider'">
                             <mat-divider></mat-divider>
                         </ng-container>
-                    </ng-container>
+                    </ng-container> -->
 
                     <!-- LEVEL 2: ChildMenuItem with children! -->
-                    <ng-container *ngIf="childMenu.children && childMenu.children.length > 0">
+                    <!-- <ng-container *ngIf="childMenu.children && childMenu.children.length > 0">
                         
                         <a mat-menu-item [title]="childMenu.link.label"
                                          [matMenuTriggerFor]="childOfChild">
@@ -45,9 +111,9 @@
                         </a>
                         <mat-menu #childOfChild="matMenu">
                             <ng-container *ngFor="let childOfChildMenu of childMenu.children">
-
+ -->
                                 <!-- LEVEL 3: only the menu items of ChildMenu -->
-                                <ng-container *ngIf="childOfChildMenu.type === 'link'">
+                                <!-- <ng-container *ngIf="childOfChildMenu.type === 'link'">
                                     <a mat-menu-item [title]="childOfChildMenu.link.label"
                                         [href]="childOfChildMenu.link.url"
                                         [target]="childOfChildMenu.link.target"
@@ -65,7 +131,7 @@
 
 
             </mat-menu>
-        </ng-container>
+        </ng-container> -->
 
     </ng-container>
 

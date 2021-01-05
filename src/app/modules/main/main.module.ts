@@ -12,6 +12,7 @@ import { HomePage } from './pages/home.page';
 import { ContactPage } from './pages/contact.page';
 import { MapsPage } from './pages/maps.page';
 import { NotFoundPage } from './pages/not-found.page';
+import { ProductPage } from './pages/product.page';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { NotFoundPage } from './pages/not-found.page';
         HomePage,
         ContactPage,
         MapsPage,
-        NotFoundPage
+        NotFoundPage,
+        ProductPage
     ],
     providers: [
     ],
